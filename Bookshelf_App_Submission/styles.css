@@ -1,0 +1,187 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    padding: 1.5rem 1.5rem;
+    background-color: red;
+    border-radius: 80px;
+    width: 100vw;
+    position: fixed;
+    z-index: 15000px;
+    display: flex;
+}
+
+header>h1 {
+    margin-inline-start: 2rem;
+    color: white;
+}
+
+header>i {
+    margin-block-start: 0.4rem;
+    margin-inline-start: 1rem;
+    color: white;
+    font-size: 40px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+main>section:nth-child(1) {
+    margin-inline-start: 2rem;
+    margin-block-start: 7rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 5px 1px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 400px;
+    flex: 2;
+}
+
+main>section:nth-child(1)>h2 {
+    text-align: center;
+}
+
+main>section:nth-child(1)>form {
+    padding: 1rem 1rem;
+}
+
+main>section:nth-child(1)>form>.form-group>input {
+    padding: 0.5rem 0.5rem;
+    max-width: 300px;
+    width: 100%;
+}
+
+main>section:nth-child(1)>form>.form-group:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>section:nth-child(1)>form>button {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    color: red;
+    box-shadow: 0 0 5px 2px red;
+}
+
+main>section:nth-child(1)>form>button:hover {
+    background-color: red;
+    color: white;
+}
+
+main article {
+    margin-inline-start: 3rem;
+    margin-block-start: 0.8rem;
+    flex: 1;
+}
+
+main article section {
+    padding: 1rem 1rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+main>article>section:nth-child(1) {
+    margin-block-start: 100px;
+}
+
+main>article>section:nth-child(1)>form>.search {
+    display: flex;
+
+}
+
+main>article>section:nth-child(1)>form>.search>input[type="text"] {
+    padding: 0.5rem 0.5rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+main>article>section:nth-child(1)>form>.search>button[type="submit"] {
+    margin-inline-start: 0.8rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+main>article>section:nth-child(2)>#containerIncompleteBookList {
+    border: 2px solid black;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.cardBookList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1rem 1rem;
+    border: 2px solid black;
+    margin-block-end: 1rem;
+}
+
+/* main>article>section:nth-child(2)>#incompleteBookList>#cardIncompletedBookList>.buttonGroup>.bookItemEditButton {
+    background-color: blue;
+} */
+
+.buttonGroup {
+    display: flex;
+    gap: 1rem 1rem;
+}
+
+.bookItemIsCompleteButton {
+    background-color: green;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.bookItemDeleteButton {
+    background-color: red;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.bookUncompletedButton {
+    background-color: yellow;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+main>article>section:nth-child(3)>#containerCompleteBookList {
+    border: 2px solid black;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+@media screen and (max-width: 728px) {
+   main>article{
+    flex-wrap: column nowrap;
+   }
+}
